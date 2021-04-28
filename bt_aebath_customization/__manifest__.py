@@ -10,7 +10,7 @@
     'version': '13.0.1',
     'depends': ['stock', 'sale_management', 'purchase', 'hr'],
     'data' : [
-        'wizard/import_inventory_view.xml',
+       # 'wizard/import_inventory_view.xml',
         'views/product_view.xml',     
      ],
     'test': [
