@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+	<record id="product_template_form_view_inherit" model="ir.ui.view">
+        <field name="name">product.template.common.form.inherit</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_form_view"/>
+        <field name="arch" type="xml">
+        	<xpath expr="//group[@name='group_standard_price']" position="after">
+        		<group>
+        			<field name="ecom_name"/>
+                    <field name="GLN_NO"/>
+		            <field name="length"/>
+		            <field name="width"/>
+		            <field name="height"/>
+		            <field name="boxes_no"/>
+		            <field name="installation_type"/>
+		            <field name="material"/>
+		            <field name="sink_shape"/>
+		            <field name="bathers_no"/>
+		            <field name="ADA_compliant"/>
+		            <field name="origin_country_id"/>
+                </group>
+                <group>
+                	<field name="catalog_name"/>
+                	<field name="theme_style"/>
+		            <field name="assembly_required"/>
+		            <field name="handles_included"/>
+		            <field name="drain_included"/>
+		            <field name="faucet_included"/>
+		            <field name="faucet_name"/>
+		            <field name="faucet_GPM"/>
+		            <field name="handhsower_GPM"/>
+		            <field name="hazmat_code"/>
+		            <field name="packaging_category"/>
+                </group>
+                <group>
+                    <field name="california_proposition_warning"/>
+		            <field name="low_lead_compliant"/>
+		            <field name="faucet_holes"/>
+		            <field name="faucet_centers"/>
+		            <field name="handshower_included"/>
+		            <field name="drain_assembly_included"/>
+		            <field name="drain_placement"/>
+		            <field name="drain_size"/>
+                </group>
+                <group>
+                	<field name="slip_resistant"/>
+		            <field name="walk_in"/>
+		            <field name="apron_front"/>
+		            <field name="tile_flange"/>
+		            <field name="self_leveling_base"/>
+		            <field name="warranty"/>
+		            <field name="keywords"/>
+		            <field name="certification"/>
+                </group>
+    		</xpath>
+    	</field>
+	</record>
+       
+</odoo>
